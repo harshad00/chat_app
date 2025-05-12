@@ -14,7 +14,7 @@ const sendVerificationEmail = async (email, token) => {
     },
   });
 
-  const verificationUrl = `https://chat-app-zrf6.onrender.com/verify?token=${token}`;
+  const verificationUrl = `https://chat-app-zrf6.onrender.com/api/verify?token=${token}`;
 
   const mailOptions = {
     from: `"Your App Name" <${process.env.EMAIL_USER}>`,
